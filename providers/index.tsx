@@ -7,7 +7,7 @@ export default function Providers({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="relative">
+    <div className="relative w-full min-h-[100dvh]">
 
       <ThemeProvider
         attribute="class"
@@ -16,7 +16,7 @@ export default function Providers({
         disableTransitionOnChange
       >
         {children}
-        <div className="absolute bottom-3 right-3">
+        <div className="fixed bottom-3 right-3">
           <ModeToggle />
         </div>
       </ThemeProvider>
